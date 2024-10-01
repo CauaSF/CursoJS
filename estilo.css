@@ -1,12 +1,34 @@
-body{
-    background-color:#fff; /*propriedade da cor de fundo*/
-    color:#000; /* color é a propriedade da cor do texto*/
+:root {
+    --cor-preto: #191516;
+    --cor-branco: #ffffff;
+    --cor-vinho: #A60067;
+    --cor-azul-duvidoso: #6153CC;
+    --cor-azul-clarin: #e5f4e3;
+    --cor-verde-claro: #DBFE87;
 }
-h2 {
-    color:#444;
-    font-size: 46px;
-    text-decoration: underline;
-} /* ISSO É um COMENTÁRIO CSS */ 
-.fonte-20px {
-    font-size:20px;
+
+body{
+    background-color:var(--cor-preto);
+    color:var(--cor-branco);
+}
+/*
+.Item-menu {
+    color: var(--cor-azul-clarin);
+}
+    */
+.item-menu {
+    color:var(--cor-verde-claro);
+}
+ header nav a.Item-menu {
+    color:var(--cor-branco);
+    text-decoration:none;
+    border: var(--cor-branco) 1px solid;
+    padding: 5px 10px;
+ }
+ header nav a.Item-menu:hover {
+    background-color:var(--cor-branco);
+    color: var(--cor-preto);
+ }
+section {
+    min-height: 500px;
 }

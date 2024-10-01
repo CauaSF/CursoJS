@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
     <head>
-        <title>Olá</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link herf="estilo.css" rel="stylesheet"/>
-        <style>
-            .primeiro-paragrafo{
-                color:green;
-            }
-        </style>
+        <title>Meu site</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-        <!--isso é um comentário html-->
-        <h1 class="primeiro-paragrafo">olá mundo!</h1>
-        <p class="primeiro-paragrafo">primeiro linha do olá mundo!</p> <!--paragrafo 1-->
-        <br><!--break return-->
-        <p> segunda linha do olá mundo!!</p>
-        <div> <!--é um divisor-->
-            é uma divisão do conteúdo, que pode ser isolada a qualquer momento 
-            <button style="background-color:blue"
-            onclick="alert('meu primeiro JS')"
-            > Ok</button>
-        </div>
-        <img
-            src="imagem.jpg"
-            alt="cachorro no cesto"
-            width="150px"
-            />
-            <!--px= pixel(unidade de medida)-->
-            <h1> O meu livro de histórias</h1>
-            <h2>Primeiro capítulo</h2>
-            <p>Esse será o <b>primeiro capítulo</b> da história do meu livro</p>
-            <!--- b -> bold / negrito, ou podemos usar o strong
-            em italico <i> ou <em>
-                -->
-            <br/>
-            <br/>
-            <h2>Segundo capítulo</h2>
-            <p class="fonte-20px">Esse será o <strong> segundo capítulo</strong> da históra do meu livro</p>
-    
+        <header>
+            <h1> Meu Site</h1>
+            <nav>
+                <a id="menu-sobre" class="Item-menu" href="#sobre-nos">Sobre nós</a>
+                <a id="menu-contato" class="Item-menu" href="#contato">Contato</a>
+            </nav>
+        </header>
+        <section id="sobre-nos">
+            <h1>
+            Seja bem-vindo ao meu site html
+        </h1>
+    </section>
+    <section id="contato">
+        <h2>
+            Aqui você verá o meu primeiro projeto com estilização e um menu bonito
+        </h2>
+    </section>
+    <script type="text/javascript">
+        const menuSobre = document.getElementById('menu-sobre');
+        
+        const menuContato = document.querySelector('#menu-contato');
+
+        menuSobre.addEventListener('click', function() {
+            menuSobre.classList.toggle('item-ativo');
+        });
+
+        menuContato.addEventListener('click', function() {
+            menuContato.classList.toggle('item-ativo');
+        });
+    </script>
     </body>
 </html>
