@@ -85,17 +85,71 @@
 
 /**
  * SOLICITE O NOME DO ALUNO(A) E SUAS 4 NOTAS BIMESTRAIS E CALCULE A MÉDIA FINAL
+//
+
+
+
+// const jogo = readline.question( "Qual melhor jogo? V -Valorant ou C - Call of Duty"); 
+// if ( jogo.toUpperCase() == "V") {
+//     console.log ("tambem gosto");
+// }
+// else if (jogo.toUpperCase() == "C") {
+//     console.log(" Não gosto e não jogo");
+// }
+// else {
+//     console.log("Opa...Opção desconhecida");
+// }
+
+
+/**
+ *    ==    - Operador lógico de comparação
+ *    >     - Operador lógico maior que
+ *    >=    - Operador lógico maior ou igual à
+ *    <     - Operador lógico menor que
+ *    <=    - Operador lógico menor ou igual à
+ *    !=    - Operador lógico diferente de
+ * 
+ *   condição operador valor
+ *   sexo == "M"
+ *   idade >= 18
+ *   senha == novaSenha
  */
+// const readline = require("readline-sync");
+
+// const nome = readline.question("Qual seu nome?"); 
+
+// let nota1 = readline.questionFloat( "Qual foi sua nota no 1 bimestre?");
+// let nota2 = readline.questionFloat( "Qual foi sua nota no 2 bimestre?");
+// let nota3 = readline.questionFloat( "Qual foi sua nota no 3 bimestre?");
+// let nota4 = readline.questionFloat( "Qual foi sua nota no 4 bimestre?");
+
+
+// const media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+// if (media >= 6) {
+//     console.log(`O(A) aluno(a) ${nome} foi aprovado(a) e a média foi de ${media}`);
+// } else {
+//     console.log(`O(A) aluno(a)  ${nome} foi reprovado(a) e a média foi de ${media}`);
+// }
+
+
 const readline = require("readline-sync");
 
-// Pegar o nome do aluno
-const nome = readline.question("Qual o nome do aluno? ");
-// Pegar as notas do aluno
-const nota1 = readline.questionFloat("Qual a nota do 1 bimestre? ");
-const nota2 = readline.questionFloat("Qual a nota do 2 bimestre? ");
-const nota3 = readline.questionFloat("Qual a nota do 3 bimestre? ");
-const nota4 = readline.questionFloat("Qual a nota do 4 bimestre? ");
-// Calcular a média
-const media = (nota1 + nota2 + nota3 + nota4) / 4;
-// Exibir o resultado
-console.log(`A media final do aluno ${nome} foi de: ${media.toFixed(2)}`);
+const idade = readline.questionInt(" Qual sua idade? \n");
+const sexo = readline.question("Qual seu sexo? M-masculino ou F-feminino \n"); 
+
+
+if (idade >= 18) {
+    if (sexo.toUpperCase() == 'M') {
+        console.log("Bem-vindo ao exército brasileiro");
+    } else if (sexo.toUpperCase() == 'F') {
+        const resposta = readline.question("Desejar se alistar ao exército? S - SIM | N - Nao\n");
+        if (resposta.toUpperCase() == 'S') {
+            console.log("Bem-vindo ao exército brasileiro");
+        } else {
+            console.log("Obrigado.");
+        }
+    }
+} else {
+    console.log("Voce ainda e menor de idade. ");
+}
