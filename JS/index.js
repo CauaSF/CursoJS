@@ -1,3 +1,9 @@
+// npm install readline-sync
+
+
+
+
+
 // // var atual =2024;
 // // var nascimento=2008;
 
@@ -196,3 +202,158 @@
 // while(valor % 5 == 0) {
 //     valor = readline.questionInt("Informe um numero multiplo de 5: ");
 // }
+
+
+
+
+
+
+// //SOLICITE 3 NÚMEROS PARA O USUÁRIO E INFORME SE O NÚMERO SOLICITADO É PAR OU ÍMPAR
+// const readline = require('readline-sync');
+
+// let soma = 0;
+
+// while(soma < 100) {
+//     let numero = readline.questionInt("Informe um numero para adicionar a soma: ");
+//     soma = soma / 5, soma != 5;
+//     console.log("soma: ", soma);
+// }
+// // Solicite um número para o usuário, enquanto esse número for múltiplo de 5, continue pedindo outro número. Informem o que o número é múltiplo de 5.
+
+
+
+
+
+
+
+
+
+
+// let frutas = ["maçã", "banana", "laranja"];
+// frutas.push("uva");
+// frutas.unshift("melão");
+// console.log(frutas, frutas.length);
+// console.log(frutas.indexOf("laranja"));
+// console.log(frutas[3]);
+// // Length - Tamanho / Quantidade de elementos
+// // Push - Incluir no fim do Array
+// // Unshift - Incluir no começo do Array
+// // Pop - Remove o último elemento do Array
+// // Shift - Remove o primeiro elemento do Array
+// // indexOf - Localizar a posição/indice do elemento no Array
+
+// const numeros = [1, 2, 3, 4, 5];
+
+// // Dobrar cada número
+// // Arrow Functions  
+// const numerosDobrados = numeros.map(numero => numero * 2);
+
+// // Funções Naturais
+// const numerosDobradosNaturais = numeros.map(function (numero) {
+//     return numero * 2;
+// });
+
+// const readline = require("readline-sync");
+
+// const notas = [];
+// for (let i = 0; i < 4; i++) {
+//     let nota = readline.questionFloat(`Qual a nota ${i}: `);
+//     notas.push(nota);
+// }
+// console.log(notas);
+// let soma = 0;
+// for (let i = 0; i < notas.length; i++) {
+//     soma = soma + notas[i];
+// }
+// console.log(soma);
+
+
+
+
+
+// const notas = [];
+// for (let i = 0; i < 4; i++) {
+//     let nota = readline.questionFloat(`Qual a nota ${i}: `);
+//     notas.push(nota);
+// }
+// console.log(notas);
+// let soma = 0;
+// for (let i = 0; i < notas.length; i++) {
+//     soma = soma + notas[i];
+// }
+// console.log(soma);
+// soma = soma / 4;
+// console.log(soma);
+// soma = soma * 4;
+// console.log(soma);
+
+
+
+
+
+
+
+
+// // function nomeDaFuncao() {
+// //     console.log( " isso é parte da minha função.");
+// //     console.log("isso também é da função");    
+// // }
+
+
+// // function dizOla(nome, sobrenome) {
+// //     console.log(`Olá ${nome} ${sobrenome}. Eu sou uma função que sei dizer olá.`);
+// // }
+
+// // nomeDaFuncao();
+// // dizOla("Tafarel", "Chicotti");
+
+// // let numero1 = readline.questionFloat( "Fale um numero:");
+// // let operacao1 = readline.question( "Fale uma operacao:");
+// // let numero2 = readline.questionFloat( "Fale um numero:");
+// // // console.log(numero1 , operacao1 , numero2);
+// // function soma( numero1, numero2) {
+// //     return numero1 + numero2;
+// //     function subtração( numero1, numero2) {
+// //         return numero1 - numero2;
+// //         function divisão( numero1, numero2) {
+// //             return numero1 / numero2;
+// //             function multiplicação( numero1, numero2) {
+// //                 return numero1 * numero2;
+// // }
+
+
+
+// const readline = require('readline-sync');
+
+// const numero1 = readline.questionInt("Informe o primeiro numero: ");
+// const operacao = readline.question("Informe a operacao desejada (+ - * / ): ");
+// const numero2 = readline.questionInt("Informe o segundo numero: ");
+// let resultado;
+
+// function soma(n1, n2) {
+//     return n1 + n2;
+// }
+
+// function subtracao(n1, n2) {
+//     return n1 - n2;
+// }
+
+// function multiplicacao(n1, n2) {
+//     return n1 * n2;
+// }
+
+// function divisao(n1, n2) {
+//     return n1 / n2;
+// }
+
+// if (operacao == "+") {
+//     resultado = soma(numero1, numero2);
+// } else if (operacao == "-") {
+//     resultado = subtracao(numero1, numero2);
+// } else if (operacao == "*") {
+//     resultado = multiplicacao(numero1, numero2);
+// } else if (operacao == "/") {
+//     resultado = divisao(numero1, numero2);
+// }
+
+// console.log(`${numero1} ${operacao} ${numero2} = ${resultado}`);
