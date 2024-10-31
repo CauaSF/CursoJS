@@ -89,7 +89,7 @@
 
 
 
-// // //6.
+//6.
 
 //  const readline = require('readline-sync');
 
@@ -114,19 +114,96 @@
 
 
 
-7.
-const readline = require('readline-sync');
+// 7.
+// const readline = require('readline-sync');
 
 
-let nota1 = readline.questionInt("fale um numero:  ");
-let nota2 = readline.questionInt("fale um numero:  ");
-let nota3 = readline.questionInt("fale um numero:  ");
-let nota4 = readline.questionInt("fale um numero:  ");
- let soma =  nota1 + nota2 + nota3 + nota4;
- console.log (" a soma deles é:" +  soma);
+// let nota1 = readline.questionInt("fale um numero:  ");
+// let nota2 = readline.questionInt("fale um numero:  ");
+// let nota3 = readline.questionInt("fale um numero:  ");
+// let nota4 = readline.questionInt("fale um numero:  ");
+//  let soma =  nota1 + nota2 + nota3 + nota4;
+//  console.log (" a soma deles é:" +  soma);
 
- let maximo ( nota1);
+//  let maior;
+//  if (nota1 > nota2) {
+//     maior= nota1;
+//  } else {
+//     maior= nota2;
+//  }
 
- let minimo ( nota1);
+//  let menor ;
+//  if ( nota3 > nota4) {
+//     menor= nota3;
+//  } else {
+//     menor= nota4;
+//  }
+// let final
+//  if ( maior > menor ) {
+//     final = maior;
+//  } else {
+//     final = menor;
+//  }
+//  console.log ("O maior numero entre eles é: " + final);
 
+
+
+//  let media =( nota1 + nota2 + nota3 + nota4) / 4;
+//  console.log( "A média desses numeros é: " + media);
  
+
+
+
+
+
+
+
+// //8.
+// const readline = require('readline-sync')
+
+// const inicio = 1
+// const fim = 100
+
+// let soma = 0
+// for ( let i = inicio ; i <= fim ; i++){
+// soma += i; 
+// }
+// console.log(`A soma dos números de ${inicio} à ${fim} é ${soma}`)
+
+
+
+
+
+
+// //9.
+// const readline = require('readline-sync');
+
+// function ehPrimo(numero) {
+//     for (let i = 2; i < numero; i++) {
+//         if (numero % i == 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// const num = readline.questionInt("Informe um numero: ");
+
+// if (ehPrimo(num)) {
+//     console.log(`O número ${num} é um número primo.`);
+// } else {
+//     console.log(`O número ${num} não é um número primo.`);
+// }
+
+
+
+
+
+
+
+
+
+
+//10.
+
